@@ -1,0 +1,21 @@
+.highchart-wrapper{
+    width: 100%;
+    height:700px;
+    display: block;
+}
+
+highcharts-chart {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+
+  .breadcrumb span{
+      display: inline;
+  }
+
+  .breadcrumb span:not(:first-child)::before{
+      content:' > ';
+      font-size: 10px;
+    
+}

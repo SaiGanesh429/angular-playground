@@ -1,0 +1,8 @@
+<div class="breadcrumb" *ngIf="isViewEnable">
+    <!-- <span *ngFor="let view of views" (click)="selectedStage(view)">{{view}}</span> -->
+</div>
+<div class="highchart-wrapper">
+    <highcharts-chart id="container" [Highcharts]="Highcharts" [constructorType]="'mapChart'" [options]="chartOptions"
+        (chartInstance)="getChartInstance($event)" #globalChart>
+    </highcharts-chart>
+</div>
